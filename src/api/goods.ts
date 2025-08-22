@@ -10,7 +10,7 @@ export function getAll(): Promise<Good[]> {
         throw new Error();
       }
 
-      return response.json() as Promise<Good[]>;
+      return response.json();
     })
     .catch(error => {
       // eslint-disable-next-line no-console
